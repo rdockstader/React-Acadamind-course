@@ -25,4 +25,13 @@ The defer tag tells the browser not to load the script until it finishes loading
 
 another option is type, such as type="module". This ulocks the import syntax inside the Javascript file.
 
-A note about react: You don't usually add your own script tags, react handles that on it's own as part of its' build process
+A note about react: You don't usually add your own script tags, react handles that on it's own as part of its' build process.
+
+## React uses a build process
+
+If you take a look at a react app, you don't have any script tags in the default index.html. How does the react app work? It's because react uses a build process. The code you write is NOT the code that actually gets executed. It gets transformed behind the scenes, and then the browser uses the transformed code. 
+
+### Why does react need a build process?
+
+1. JSX code simply will not run in the browser. it has to be compiled to native web languages to work. 
+1. The code wouldn't be optimized for production (such as it wouldn't be minified)
