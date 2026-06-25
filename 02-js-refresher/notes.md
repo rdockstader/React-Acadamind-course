@@ -35,3 +35,23 @@ If you take a look at a react app, you don't have any script tags in the default
 
 1. JSX code simply will not run in the browser. it has to be compiled to native web languages to work. 
 1. The code wouldn't be optimized for production (such as it wouldn't be minified)
+
+## import/export
+
+Import export is how you use code in other files in the file you're currently using. That'll be really important in react, because that's how you pull components into other components/pages. There is an example of this in util.js and app.js
+
+for import/export to work, you have to have type="module" on the script tag in the html file
+
+type="module" isn't required for react, because of the build process.
+
+if you want to export something from a file without calling the  {} syntax, you can use:
+
+```
+export default "test-api-key"
+```
+
+then in the import file:
+```
+import assignedName from "path/to/file.js"
+```
+
