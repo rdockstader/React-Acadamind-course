@@ -55,3 +55,10 @@ then in the import file:
 import assignedName from "path/to/file.js"
 ```
 
+## variables and values
+
+there are type and objects in javascript. 
+
+javascript uses camelcase for variable naming. The rest of the regular variables rules apply to javascript. 
+
+you create variables using let, or const. let allows you to modify values at will. const is immutable and should be prefered.
