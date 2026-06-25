@@ -62,3 +62,9 @@ there are type and objects in javascript.
 javascript uses camelcase for variable naming. The rest of the regular variables rules apply to javascript. 
 
 you create variables using let, or const. let allows you to modify values at will. const is immutable and should be prefered.
+
+## operators
+
+the regular operators apply to javascript as well. the + operator can also be used in strings for concatination. 
+
+=== (triple equals) looks for actual equality in javascript, since double equals == looks for not exact equality. (works across types, 10 == '10' is true)
